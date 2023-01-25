@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/BR.js"></script>
+    <script src="https://kit.fontawesome.com/4f19350230.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <script>
+
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+
+            });
+        });
+
+        function fnMove(seq){
+        var offset = $(seq).offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+    }
+
+    </script>
+    <title> 배스킨라빈스 </title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="back">
+            <div class="wrap">
+                <h1>
+                    <a href="">
+                        <img src="images/header_logo.png" alt="배스킨라빈스에 오신걸 환영합니다.">
+                    </a>
+                </h1>
+                <ul class="navSection">
+                    <li>
+                        <input type="search" placeholder="Search">
+                    </li>
+                    <li>
+                        <a href="loginPage.html" target="_blank"></a>
+                    </li>
+                    <li>
+                        <label for="nav">
+                            <img src="images/checkbox_open.png" alt="메뉴">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+        <div class="back">
+            <div class="wrap">
+                <input type="checkbox" id="nav">
+                <nav>
+                    <ul>
+                        <li class="active">
+                            <a href="#" onclick="fnMove('header')">FLAVOR OF THE MONTH</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="fnMove('section.menuArea')">MENU</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="fnMove('section.eventArea')">EVENT</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="fnMove('section.storeArea')">STORE</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="fnMove('section.snsArea')">SNS</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="fnMove('footer')">ABOUT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="back">
+            <div class="wrap">
+                <div>
+                    <span>마성의 조합 이달의 맛</span>
+                    <h2>Ice Kitket</h2>
+                    <span><a href="BR_event.html" target="_blank">#아이스킷캣 이벤트</a>에 참여해보세요 !</span>
+                    <input type="button" value="More Information" onclick="window.open('BR_event.html')">
+                    <img src="images/ice_img.png" alt="이달의 맛 아이스킷캣">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="slideArea">
+            <div class="wrap">
+                <h2>MONTH OF THE FLAVOR WITH NEW ITEM</h2>
+                <div class="slider">
+                    <div>
+                        <figure class="active">
+                            <img src="images/cake.png" alt="누가봐도 킷캣케이크">
+                            <figcaption>
+                                <dl>
+                                    <dt>누가봐도 <span>킷캣 케이크</span></dt>
+                                    <dd>37,000원</dd>
+                                    <dd>35,000원</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure class="active2">
+                            <img src="images/blast.png" alt="킷캣 오리지널 블라스트">
+                            <figcaption>
+                                <dl>
+                                    <dt>킷캣 오리지널 <span>블라스트</span></dt>
+                                    <dd>4,500원</dd>
+                                    <dd>4,000원</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure class="active3">
+                            <img src="images/kitkatBar.png" alt="아이스 자이언트 킷캣바">
+                            <figcaption>
+                                <dl>
+                                    <dt>아이스 <span>자이언트 킷캣바</span></dt>
+                                    <dd>3,500원</dd>
+                                    <dd>3,000원</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menuArea">
+        <div class="wrap">
+            <h2>BR MENU</h2>
+            <div>
+                <ul>
+                    <li>
+                        <a href="https://www.baskinrobbins.co.kr/menu/list.php?top=A">
+                            <figure>
+                                <figcaption>
+                                    <h3>ICECREAM</h3>
+                                    <p>
+                                        프리미엄 아이스크림의 기준. 배스킨라빈스
+                                    </P>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.baskinrobbins.co.kr/store/catering.php">
+                            <figure>
+                                <figcaption>
+                                    <h3>HAPPY ORDER SERVICE</h3>
+                                    <p>
+                                        해피에서 간편하게 <span>예약 &amp; 픽업 배달까지 !</span>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.baskinrobbins.co.kr/menu/list.php?top=D">
+                            <figure>
+                                <figcaption>
+                                    <h3>COFFEE</h3>
+                                    <p>
+                                        배스킨라빈스만의 <span>부드러운 촉감과 달콤한 풍미 !</span>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.baskinrobbins.co.kr/menu/list.php?top=E">
+                            <figure>
+                                <figcaption>
+                                    <h3>DESSERT</h3>
+                                    <p>
+                                        아이스크림을 더욱 다양하게 즐기는 방법 !
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.baskinrobbins.co.kr/menu/list.php?top=B">
+                            <figure>
+                                <figcaption>
+                                    <h3>ICE CREAM CAKE</h3>
+                                    <p> 
+                                        아이와 어른이 모두 좋아하는 아이스크림을 케이크로 만나보세요 !
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.baskinrobbins.co.kr/menu/list.php?top=C">
+                            <figure>
+                                <figcaption>
+                                    <h3>BEVERAGE</h3>
+                                    <p>
+                                        아이스크림으로 즐기는 배스킨라빈스만의 음료 !
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="images/menu_brDelivery.png" alt="배스키라빈스 케릭터">
+                    </li>
+                    <li>
+                        <img src="images/menu_beamin.png" alt="배달의민족 케릭터">
+                    </li>
+                    <li>
+                        <a href="https://www.baskinrobbins.co.kr/store/catering.php">
+                        <figure>
+                            <figcaption>
+                                <h3>배달의 민족에서 <span>빠르게 주문하기</span></h3>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <a href="http://www.tmon.co.kr/deal/351804018">
+                            <figure>
+                                <figcaption>
+                                    <h3>GIFT</h3>
+                                    <p>
+                                        특별한 날, 배스킨라빈스로 잊지못할 달콤한 선물을 보내보세요 !
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="eventArea">
+            <h2>BR EVENT</h2>
+            <div>
+                <ul>
+                    <li>
+                        <a href="BR_event.html" target="_blank">
+                            <span>btn</span>
+                            <img src="images/banner_3.png" alt="이달의맛 인스타 이벤트">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>btn</span>
+                            <img src="images/banner_2.png" alt="배라카페 이벤트">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>btn</span>
+                            <img src="images/banner_1.png" alt="M포인트 이벤트">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>btn</span>
+                            <img src="images/banner_4.png" alt="kt멤버십 파인트할인 이벤트">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>btn</span>
+                            <img src="images/banner_6.png" alt="텀블러 사용시 할인이벤트">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>btn</span>
+                            <img src="images/banner_5.png" alt="31DAY 이벤트">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+    </section>
+    <section class="storeArea">
+        <div class="wrap">
+            <h2>내 주변 가장 가까운 <span>배스킨라빈스 매장을 찾아보세요 !</span></h2>
+            <span>다양한 즐거움과 새로움 ! 우리동네 배스킨라빈스 !</span>
+            <a href="https://www.baskinrobbins.co.kr/store/map.php" target="_blank">
+                <input type="button" value="매장찾기">
+            </a>
+        </div>
+    </section>
+    <section class="snsArea">
+            <h2>SNS</h2>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/baskinrobbinskr/">
+                        <img src="images/sns_blog.png" alt="blog">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/BaskinrobbinsKR">
+                        <img src="images/sns_facebook.png" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blog.naver.com/brgirl31">
+                        <img src="images/sns_instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/baskinrobbinskorea/">
+                        <img src="images/sns_twitter.png" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/baskinrobbinskorea">
+                        <img src="images/sns_youtube.png" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+            <h3>
+                <span>BASKINROBBINS INSTAGRAM</span>
+            </h3>
+            <div>
+                <ul>
+                    <li>
+                        <button onclick="window.open('https://www.instagram.com/p/B8vveQshMrA/')">See More</button>
+                        <p>
+                            <span>95,325</span>
+                            <span>104</span>
+                        </p>
+                        <a href="https://www.instagram.com/p/B8vveQshMrA/" target="_blank">
+                            <img src="images/sns_1.png" alt="27 큐브 케이크 인스타그램">
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="window.open('https://www.instagram.com/p/B8tKsUIhDZ9/')">See More</button>
+                        <p>
+                            <span>24,685</span>
+                            <span>29</span>
+                        </p>
+                        <a href="https://www.instagram.com/p/B8tKsUIhDZ9/" target="_blank">
+                            <img src="images/sns_2.png" alt="아이스킷캣 케이크 인스타그램">
+                        </a>
+                    </li>
+                    <li class="active">
+                        <button onclick="window.open('https://www.instagram.com/p/B88vOJqBFQ7/')">See More</button>
+                        <p>
+                            <span>24,885</span>
+                            <span>56</span>
+                        </p>
+                        <a href="https://www.instagram.com/p/B88vOJqBFQ7/" target="_blank">
+                            <img src="images/sns_3.png" alt="조안테디베어 인스타그램">
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="window.open('https://www.instagram.com/p/B8vh6qngViH/')">See More</button>
+                        <p>
+                            <span>68,454</span>
+                            <span>93</span>
+                        </p>
+                        <a href="https://www.instagram.com/p/B8vh6qngViH/" target="_blank">
+                            <img src="images/sns_4.png" alt="아이스 오리지널 블라스트 인스타그램">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </section>
+    <footer>
+        <hr>
+        <div class="wrap">
+            <ul>
+                <li>
+                    <a href="https://www.baskinrobbins.co.kr/about/br_system.php" target="_blank">점포개설문의</a>
+                </li>
+                <li>
+                    <a href="https://www.baskinrobbins.co.kr/about/jobs.php" target="_blank">채용문의</a>
+                </li>
+                <li>
+                    <a href="http://www.spc.co.kr/spc/group/GEM_info.spc" target="_blank">윤리신고센터</a>
+                </li>
+                <li>
+                    <a href="https://www.happypointcard.com/main/index.spc" target="_blank">이용약관</a>
+                </li>
+                <li class="active">
+                    <a href="http://www.baskinrobbins.co.kr/customer/policy.php" target="_blank">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="http://www.baskinrobbins.co.kr/customer/policy_cctv.php" target="_blank">영상정보처리기기운영관리방침</a>
+                </li>
+                <li>
+                    <a href="http://happy.spc.co.kr/indexframe.jsp" target="_blank">거래희망회사 사전등록</a>
+                </li>
+            </ul>
+        </div>
+        <div class="back">
+            <div class="wrap">
+                <ul>
+                    <li>
+                        <a href="https://www.happypointcard.com/main/index.spc">
+                            <img src="images/btn_happypoint.png" alt="해피포인트카드">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://m.celectory.com/mobile/gift/recommend;jsessionid=kG-Mm8EubJAv1KzUl4nT75ZMHtgTBEs5O_Kvn-ED2kBMMGlA9xtE!1010466848!-989847881?">
+                            <img src="images/btn_happymarket.gif" alt="해피마켓">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.spc.co.kr/contributionAll">
+                            <img src="images/btn_spc_story.png" alt="SPC그룹사이트">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://kr.norton.com/">
+                            <img src="images/btn_norton.gif" alt="온라인개인정보보안norton360">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.kca.go.kr/ccm/">
+                            <img src="images/btn_ccm.gif" alt="소비자중심경영인증">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://knqa.ksa.or.kr/knqa/2276/subview.do">
+                            <img src="images/btn_ksa.png" alt="국가품질상">
+                        </a>
+                    </li>
+                    <li>
+                        <select id="btn_footer">
+                            <option selected>Family Site</option>
+                            <option value="배스킨스쿨">배스킨스쿨</option>
+                            <option value="SPC그룹사이트">SPC그룹사이트</option>
+                            <option value="SPC MAGAZINE">SPC MAGAZINE</option>
+                            <option value="BR코리아">BR코리아</option>
+                            <option value="해피포인트카드">해피포인트카드</option>
+                            <option value="파스쿠찌">파스쿠찌</option>
+                            <option value="삼립">삼립</option>
+                            <option value="파리바게트">파리바게트</option>
+                            <option value="던킨도너츠">던킨도너츠</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap">
+            <h3>
+                <a href="#">
+                    <img src="images/footer_logo.png" alt="하단 로고">
+                </a>
+            </h3>
+            <p>
+                사업자 등록번호 : 303-81-09535 비알코리아(주) 대표이사 김창대 서울특별시 서초구 남부순환로 2620(양재동 11-149번지)
+                <span>TEL : 080-555-3131 개인정보관리책임자 : 김경우</span>
+
+                <span>Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.</span>
+            </p>
+        </div>
+    </footer>
+    <div class="fixedTop">
+        <ul>
+            <li>
+                <a href="#" onclick="fnMove('header')">TOP</a>
+            </li>
+            <li>
+                <a href="#" onclick="fnMove('footer')">DOWN</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
