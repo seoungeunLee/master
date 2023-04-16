@@ -104,3 +104,92 @@ const superman = {
       name : "clark1"
     }
   */
+
+
+
+  //! 함수 생성 - 이름과 나이를 받아서 객체를 생성하는 함수 
+  function makeObject(name, age){
+    return{
+      // name: name,
+      name,
+      // age : age,
+      age,
+      hobby : 'football',
+    }
+  }
+  const Mike = makeObject('Mike', 30);
+  console.log(Mike);
+  /*
+    결과 : 
+
+    Object {
+      age : 30,
+      hobby : 'football',
+      neme : 'Mike'
+    }
+  */
+
+  
+  //프로퍼티 확인 : in
+  console.log('age' in Mike); // true
+  console.log('birthday' in Mike); //false
+
+
+
+  //! 인수로 유저의 객체를 받고, 나이를 확인하여 성인인지 아닌지 구분하는 함수
+  function isAdult(user){
+    if(user.age < 20){
+      return false
+    }
+    return true;
+  }
+
+  // user 객체 생성
+  const Mikeee = {
+    name : 'Mikeee',
+    age : 30
+  }
+  
+  const Jane = {
+    name : 'Jane',
+  }
+
+  console.log(isAdult(Mikeee)); // true
+  console.log(isAdult(Jane)); // true -> 나이를 입력하지 않았는데도 true 반환
+  /*
+    if(user.age < 20){
+      return false
+    }
+    return true;
+
+
+    해당 조건문에서 age가 없기때문에 조건문을 건너뛰고 true 반환
+
+    if( !('age' in user) || user.age < 20 ){
+      return false;
+    }
+    return true;
+
+  */
+
+
+
+
+
+
+    //객체 For in 문
+    const Mikeeee = {
+      name : "Mikeeee",
+      age : 30,
+    };
+
+    for(key in Mikeeee){
+      console.log(key); // name, age 가 찍힘 - Mikeeee가 가지고 있는 키값
+
+      console.log(Mikeeee[key]);
+      // Mikeeee['name']
+      // Mikeeee['age']
+    }
+
+    
+
