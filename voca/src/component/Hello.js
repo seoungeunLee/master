@@ -42,7 +42,7 @@ export default function Hello(){
           showAge(10)
         }
       }>Show age</button>
-      <input type="text" className="text-[#333]" onChange={}></input>
+      <input type="text" className="text-[#333]" onChange={showAge}></input>
     </div>
   )
 }
