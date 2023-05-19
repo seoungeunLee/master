@@ -5,6 +5,8 @@
 import Header from './component/Header';
 import DayList from './component/DayList';
 import Day from './component/Day';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+// !리액트 6 버전 이상에서 Switch 삭제됨 
 
 function App() {
   // const name = "Seoungeun";
@@ -18,12 +20,20 @@ function App() {
   //   url : "https://www.naver.com",
   // }
   return (
+    <BrowserRouter>
     <div className="App">
       {/* <Hello /> */}
 
       <Header />
-      <DayList/>
-      <Day />
+      <Routes>
+        <Route path='/' element={<DayList/>} />
+        <Route path='/day' element={<Day />} />
+      </Routes>
+      {/* 
+        Routes -> react-router-dom v6 업데이트 이전 Switch : url에 따라 각각 다른 페이지들을 보여줌 / Routes 외부는 모든 페이지에 공통으로 표시 됨
+        기존에는 Switch 안에 Route , 그 안에 해당 path에 따라 보여질 컴포넌트가 존재
+        v6 업데이트 이후 : Routes 안에는 Route만 존재 할 수 있고, path에 따라 로드 될 컴포넌트는 element속성으로 부여
+      */}
 
 
       {/* <h1>props : properties</h1>
@@ -65,6 +75,7 @@ function App() {
         {naver.name}
       </a> */}
     </div>
+    </BrowserRouter>
   );
 }
 

@@ -4,17 +4,20 @@ import dummy from '../DB/data.json'
 
 export default function Day() {
   // dummy.words
+
+  const day = 1;
+  const wordList = dummy.words.filter(word => (
+    word.day === day
+  ))
+  console.log(wordList);
+
   return (
     <div>
       <table>
-        {dummy.words.map(word => (
-        <tr>
-          <td>
-            {word.eng}
-          </td>
-          <td>
-            {word.kor}
-          </td>
+        {wordList.map(word => (
+        <tr key={word.id}>
+          <td>{word.eng}</td>
+          <td>{word.kor}</td>
         </tr>
         ))}
       </table>
