@@ -1,8 +1,10 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 // import Hello from './component/Hello';
-import State from './component/State';
-
+// import State from './component/State';
+import Header from './component/Header';
+import DayList from './component/DayList';
+import Day from './component/Day';
 
 function App() {
   // const name = "Seoungeun";
@@ -18,7 +20,18 @@ function App() {
   return (
     <div className="App">
       {/* <Hello /> */}
-      <State />
+
+      <Header />
+      <DayList/>
+      <Day />
+
+
+      {/* <h1>props : properties</h1>
+      <div className='flex flex-col gap-5'>
+      <State age={10}/>
+      <State age={20}/>
+      <State age={30}/>
+      </div> */}
 
 
       {/* <header className="App-header">
