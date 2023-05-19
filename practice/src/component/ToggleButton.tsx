@@ -4,10 +4,11 @@ import { useEffect, useState } from "react";
 
 const ToggleButton = () => {
   const [showButton, setShowButton] = useState(false);
+  
 
   useEffect(()=> {
     const ShowButtonClick = () => {
-      if(window.scrollY > 300){
+      if(window.scrollY > 400){
         setShowButton(true)
       }else{
         setShowButton(false)
@@ -25,7 +26,7 @@ const ToggleButton = () => {
     <>
     {showButton && 
       <div>
-        <button className="bg-[royalblue] text-white px-4 py-2 rounded-md block fixed top-[300px] left-[47%]">button</button>
+        <button className="bg-[royalblue] text-white px-4 py-2 rounded-md block fixed top-[400px] left-[47%]">button</button>
       </div>
       }
     </>

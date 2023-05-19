@@ -26,8 +26,22 @@ export default function Hello(){
 
 
   function showText(e){
-    console.log()
+    console.log(e.target.value)
+    // 여기서 target은 input 태그 , value는 target의 value니까 input 태그에 작성한 값을 가르킴
+    // 글자를 쓸때마다 로그로 찍히게 됨
   }
+  // 입력되는 텍스트를 매개변수로 받아서 출력시켜주는 방법도 있음
+  /*
+    function showText(txt){
+      console.log(txt)
+    }
+
+    <input type="text" className="text-[#333]" onChange={(e)=>{
+      const txt = e.target.value;
+      showText(txt);
+      }} />
+
+  */
 
   return(
     <div>
@@ -42,7 +56,16 @@ export default function Hello(){
           showAge(10)
         }
       }>Show age</button>
-      <input type="text" className="text-[#333]" onChange={showAge}></input>
+
+      {/* 바뀔때마다 찍혀야하기 때문에 onChange 사용 */}
+      <input type="text" className="text-[#333]" onChange={showText} />
+      {/* 
+        위의 코드를 하단과 같이 적어도 동일하게 적용
+        <input type="text" className="text-[#333]" onChange={(e)=>{
+        console.log(e.target.value)
+      }} />
+      */}
+      
     </div>
   )
 }

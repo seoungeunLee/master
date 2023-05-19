@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
-import Hello from './component/Hello';
+// import Hello from './component/Hello';
+import State from './component/State';
+
 
 function App() {
   // const name = "Seoungeun";
@@ -15,7 +17,9 @@ function App() {
   // }
   return (
     <div className="App">
-      <Hello />
+      {/* <Hello /> */}
+      <State />
+
 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
