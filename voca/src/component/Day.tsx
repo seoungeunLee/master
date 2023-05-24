@@ -13,6 +13,7 @@ export default function Day() {
 
   return (
     <div>
+      <h2>Day {day}</h2>
       <table>
         {wordList.map(word => (
         <tr key={word.id}>

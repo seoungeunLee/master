@@ -27,12 +27,20 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<DayList/>} />
-        <Route path='/day' element={<Day />} />
+        <Route path='/day/:day' element={<Day />} />
       </Routes>
       {/* 
         Routes -> react-router-dom v6 업데이트 이전 Switch : url에 따라 각각 다른 페이지들을 보여줌 / Routes 외부는 모든 페이지에 공통으로 표시 됨
         기존에는 Switch 안에 Route , 그 안에 해당 path에 따라 보여질 컴포넌트가 존재
         v6 업데이트 이후 : Routes 안에는 Route만 존재 할 수 있고, path에 따라 로드 될 컴포넌트는 element속성으로 부여
+
+        exact : 기존의 리액트 라우터의 디폴트 매칭 규칙으로 인해 앞부분만 일치해도 전부 매칭 되기 때문에 정확히 라우트를 일치 시키고자 사용한 속성
+        -> v6이후부터는 기본적으로 정확히 일치하도록 매칭 규칙이 변경됨 => 더이상 사용하지 않음
+        -> 하위 경로에 여러 라우팅을 매칭 시키고 싶을때는 url뒤에 '*'을 사용하여 일치시킬 수 있음
+          // categores 로 시작되는 모든 라우팅 매칭
+          <Route path='categories/*' />
+
+
       */}
 
 
