@@ -40,7 +40,7 @@ function App() {
           // categores 로 시작되는 모든 라우팅 매칭
           <Route path='categories/*' />
 
-
+        다이나믹한 url을 처리 할 때는 ':'을 사용
       */}
 
 
