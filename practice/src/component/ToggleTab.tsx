@@ -22,6 +22,8 @@ const ToggleTab = () => {
           <p>tab3</p>
         </button>
       </div> */}
+
+      {/* classnames 보편적으로 많이 사용함 */}
       <div className="gap-2 flex mb-2">
         <button className={ classNames('w-full text-opacity-40 bg-green-50 rounded-md py-5 text-[#222] text-[18px] uppercase font-bold',{
           ' text-opacity-100  font-bold   bg-green-900 text-white':activeTab === 0
