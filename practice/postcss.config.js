@@ -1,12 +1,12 @@
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: './src/index.tsx',
   resolve: {
-    extensions: [".tsx", ".ts"],
+    extensions: ['.tsx', '.ts']
   },
   plugins: {
     tailwindcss: {},
-    autoprefixer: {},
-  },
+    autoprefixer: {}
+  }
 }
 
 // ? webpack이 module을 찾는방법
@@ -19,6 +19,5 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts"],
   },
-  //...
-};
+  };
 */
