@@ -15,16 +15,10 @@ function ToggleComponent() {
     };
   }, [visible]);
 
-  return (
-    <div>
-      {visible && <h1>Toggle Me</h1>}
-    </div>
-  );
+  return <div>{visible && <h1>Toggle Me</h1>}</div>;
 }
 
 export default ToggleComponent;
-
-
 
 // import React, { useState, useEffect } from 'react';
 
